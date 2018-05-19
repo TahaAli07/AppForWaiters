@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CustomerFeedback_LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thaaa"
+    android:orientation="vertical"
+    tools:context=".CustomerFeedback">
+
+    <EditText
+        android:id="@+id/CustomerFeedback_name_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Name"
+        android:textColorHint="#9F9696"
+        android:textColor="#ffffff"
+
+
+        />
+    <EditText
+        android:id="@+id/CustomerFeedback_phone_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Contact No."
+        android:inputType="number"
+        android:textColorHint="#9F9696"
+        android:textColor="#ffffff"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Food"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+    <RatingBar
+        android:id="@+id/CustomerFeedback_Food_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Service"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+    <RatingBar
+        android:id="@+id/CustomerFeedback_Service_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Ambience"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+    <RatingBar
+        android:id="@+id/CustomerFeedback_Ambience_RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Feedback"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        />
+    <EditText
+        android:id="@+id/CustomerFeedback_feedback_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        />
+
+    <Button
+        android:id="@+id/CustomerFeedback_Submit_Button"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        android:layout_width="match_parent"
+        android:onClick="onSumbit"
+        android:background="#000"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

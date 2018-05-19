@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.android.waitlist.MainActivity"
+    android:background="@drawable/thaaa"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/person_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:hint="@string/guest_name_hint"
+            android:textColorHint="#9F9696"
+
+            />
+
+        <EditText
+            android:id="@+id/party_count_edit_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/party_size_hint"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#FFFFFF"/>
+        <requestFocus />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_to_waitlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        android:onClick="addToWaitlist"
+        android:text="@string/add_button_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_guests_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="383dp" />
+
+    <Button
+        android:id="@+id/takeFeedback_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Take feedback"
+        android:onClick="openFeedbackActivity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+
+
+</LinearLayout>
